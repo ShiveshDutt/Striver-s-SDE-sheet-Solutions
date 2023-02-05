@@ -1,0 +1,33 @@
+public class largestAndsecondLargestelement{
+    public static void main(String[] args) {
+
+        int[] num = {45,78,65,-99,32,11,99,-7};
+        int largestElement = largest(num);
+        System.out.println(largestElement);
+        int SmallestElement  = Smallest(num);
+        System.out.println(SmallestElement);
+        
+    }
+
+    static int largest(int[] array){
+        int num = 0;
+        for (int i = 0; i < array.length; i++) {
+            if(array[i]>num){
+                num = array[i];
+            }
+        }
+        return num;
+    }
+
+    static int Smallest(int[] array){
+        int num = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            if(array[i]<num){
+                num = array[i];
+            }
+        }
+        return num;
+    }
+
+}
